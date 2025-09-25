@@ -7,6 +7,8 @@ import { ListaTurmasComponent } from './components/lista-turmas/lista-turmas.com
 import { CadastroTurmaComponent } from './components/cadastro-turma/cadastro-turma.component';
 import { ListaMateriasComponent } from './components/lista-materias/lista-materias.component';
 import { CadastroMateriaComponent } from './components/cadastro-materia/cadastro-materia.component';
+import { ListaProfessoresComponent } from './components/lista-professores/lista-professores.component';
+import { CadastroProfessorComponent } from './components/cadastro-professor/cadastro-professor.component';
 
 export const routes: Routes = [
     { path: "calculadora", component: CalculadoraComponent },
@@ -14,8 +16,10 @@ export const routes: Routes = [
     { path: "alunos", component: ListaAlunosComponent },
     { path: "cadastro", component: CadastroAlunoComponent },
     { path: "turmas", component: ListaTurmasComponent },
-    {path: "cadastro-turmas", component: CadastroTurmaComponent},
-    {path: "materias", component:ListaMateriasComponent},
-    {path: "cadastro-materias", component:CadastroMateriaComponent}
+    { path: "cadastro-turmas", component: CadastroTurmaComponent },
+    { path: "materias", component: ListaMateriasComponent },
+    { path: "cadastro-materias", component: CadastroMateriaComponent },
+    { path: "professores", component: ListaProfessoresComponent },
+    { path: "cadastro-professor", component: CadastroProfessorComponent }
 
 ];
