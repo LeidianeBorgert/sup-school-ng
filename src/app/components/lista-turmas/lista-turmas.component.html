@@ -15,6 +15,7 @@
             <td>{{turma.nome}}</td>
             <td>{{turma.sigla}}</td>
             <td>
+                <button (click)="editarTurma(turma)">Editar</button>
                 <button (click)="apagarTurma(turma)">Apagar</button>
             </td>
         </tr>
