@@ -1,0 +1,25 @@
+import { Component, Input } from '@angular/core';
+import { RouterLink } from '@angular/router';
+
+export interface NavbarMenu {
+  link: string;
+  titulo: string;
+}
+
+@Component({
+  selector: 'app-navbar',
+  imports: [RouterLink],
+  templateUrl: './navbar.component.html',
+  styleUrl: './navbar.component.scss'
+})
+export class NavbarComponent {
+
+  //INPUT => ENTRADA
+  //OUTPUT = > SAÍDA
+ @Input() menus: NavbarMenu[] = [];
+
+
+}
+
+
+

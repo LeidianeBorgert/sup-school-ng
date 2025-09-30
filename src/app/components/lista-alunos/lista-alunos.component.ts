@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Route, Router, RouterLink } from '@angular/router';
+import { BotaoComponent } from "../botao/botao.component";
 
 
 interface Aluno {
@@ -15,7 +16,7 @@ interface Aluno {
 
 @Component({
   selector: 'app-lista-alunos',
-  imports: [RouterLink],
+  imports: [RouterLink, BotaoComponent],
   templateUrl: './lista-alunos.component.html',
   styleUrl: './lista-alunos.component.scss'
 })
