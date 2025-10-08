@@ -27,5 +27,15 @@ export class AutorList {
         console.error("Ocorreu um erro  ao carregar  os autores: " + erro )
       }
     });
+    
   }
+  apagar(id: number) {
+    this.autorService.delete(id).subscribe({
+        next: _ => this.carregarAutores(),
+        error: erro => {
+            alert("Não foi possível apagar a autor")
+            console.error("Ocorreu um erro ao apagar as autor: " + erro)
+        }
+    })
+}
 }

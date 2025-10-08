@@ -10,3 +10,9 @@ export interface AutorCadastroRequest {
     nacionalidade: string;
     dataNascimento: string;
 }
+
+export interface AutorEditarRequest {
+    nome: string;
+    nacionalidade: string;
+    dataNascimento: string;
+}
