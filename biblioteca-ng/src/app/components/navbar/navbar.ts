@@ -18,6 +18,18 @@ export class Navbar {
         icon: 'pi pi-home',
         routerLink: "/"
       },
+       {
+        label: 'Escola',
+        icon: 'pi pi-home',
+        items:[
+          {
+            label: 'Alunos',
+            icon: 'pi pi-users',
+            routerLink:"alunos",
+          }
+        ]
+      },
+
       {
         label: 'Cadastros',
         icon: 'pi pi-cog',
