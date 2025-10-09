@@ -20,12 +20,17 @@ export class Navbar {
       },
        {
         label: 'Escola',
-        icon: 'pi pi-home',
+        icon: 'pi pi-shop',
         items:[
           {
             label: 'Alunos',
             icon: 'pi pi-users',
             routerLink:"alunos",
+          },
+          {
+            label: 'Cursos',
+            icon: 'pi pi-list',
+            routerLink:"cursos",
           }
         ]
       },
