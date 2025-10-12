@@ -12,20 +12,22 @@ import { AlunoCreate } from './pages/alunos/create/create';
 import { AlunoEdit } from './pages/alunos/edit/edit';
 import { CursoList } from './pages/cursos/list/list';
 import { LivroCreate } from './pages/livros/create';
+import { LivroList } from './pages/livros/list';
 
 export const routes: Routes = [
     { path: "categorias", component: CategoriaList },
     { path: "categorias/cadastrar", component: CategoriaCreate },
     { path: "categorias/editar/:id", component: CategoriaEdit },
     { path: "autores", component: AutorList },
-    {path:"autores/cadastrar", component:AutorCreate},
+    { path: "autores/cadastrar", component: AutorCreate },
     { path: "autores/editar/:id", component: AutorEdit },
     { path: "alunos", component: AlunoList },
-    {path:"alunos/cadastrar", component:AlunoCreate},
+    { path: "alunos/cadastrar", component: AlunoCreate },
     { path: "alunos/editar/:id", component: AlunoEdit },
     { path: "cursos", component: CursoList },
-    {path:"livros/cadastrar", component:LivroCreate},
-
+    { path: "livros", component: LivroList },
+    { path: "livros/cadastrar", component: LivroCreate },
+];
     
 
 
@@ -33,4 +35,3 @@ export const routes: Routes = [
 
 
 
-];

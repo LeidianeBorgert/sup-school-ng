@@ -49,10 +49,11 @@ export class Navbar {
             icon: 'pi pi-list',
             routerLink: "categorias"
           },
-          {
+           {
             label: 'Livros',
-            icon: 'pi pi-book'
-          },
+            icon: 'pi pi-book',
+            routerLink: "livros"
+          },         
           {
             label: 'Usuários',
             icon: 'pi pi-user'
