@@ -40,4 +40,14 @@ export interface EmprestimoUsuarioResponse {
     endereco: string;
 }
 
+export interface EmprestimoCadastroRequest {
+
+    livro: string;
+    usuario: string;
+    dataEmprestimo: Date | null;
+    dataDevolucao: Date | null;
+    status: string;
+  
+}
+
 

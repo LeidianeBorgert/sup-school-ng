@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { EmprestimoResponse } from '../models/emprestimo.dto';
+import { EmprestimoCadastroRequest, EmprestimoResponse } from '../models/emprestimo.dto';
 
 @Injectable({
   providedIn: 'root'
@@ -16,5 +16,11 @@ export class EmprestimoService {
       return this.httpClient.get<EmprestimoResponse[]>(this.url);
     }
 
+    create(form: EmprestimoCadastroRequest): Observable<void> {
+    return this.httpClient.post<void>(this.url, form);
 }
+
+}
+
+
 

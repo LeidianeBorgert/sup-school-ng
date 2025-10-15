@@ -1,9 +1,9 @@
 
-     <!--<div class="flex justify-content-end mr-2 mt-2">
+     <div class="flex justify-content-end mr-2 mt-2">
     <p-button label="Cadastrar" severity="info" icon="pi pi-plus" routerLink="cadastrar" />
 
 </div>
-     --> 
+    
 
 <div class="mr-2 mt-2 ml-2">
     <p-table [value]="emprestimos" [tableStyle]="{ 'min-width': '50rem' }">
@@ -19,8 +19,8 @@
         </ng-template>
         <ng-template #body let-emprestimo>
             <tr>
-                <td>{{ emprestimo.livro.id }}</td>
-                <td>{{ emprestimo.usuario.id }}</td>
+                <td>{{ emprestimo.livro.nomw }}</td>
+                <td>{{ emprestimo.usuario.nome }}</td>
                 <td>{{ emprestimo.dataEmprestimo }}</td>
                 <td>{{ emprestimo.dataDevolucao }}</td>
                 <td>{{ emprestimo.status }}</td>
